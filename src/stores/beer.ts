@@ -12,7 +12,7 @@ export const useBeerStore = defineStore("beer", () => {
     autocomplete: '',
     page: 1,
     per_page: 10,
-    sort: 'type,name:desc'
+    sort: 'name:desc'
   });
 
   const breweriesCount = ref<number | undefined>();
@@ -47,7 +47,7 @@ export const useBeerStore = defineStore("beer", () => {
   
 
   const setSortedBy = async (by: 'asc' | 'desc') => {
-    query.sort = 'type,name:' + by;
+    query.sort = 'name:' + by;
     isLoading.value = true;
     await fetchBeers();
     isLoading.value = false;  }
