@@ -1,3 +1,4 @@
+///<reference types="vitest" />
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 
@@ -9,5 +10,9 @@ export default defineConfig({
       '@': '/src',
       '@views': '/src/views'
     }
+  },
+  test: {
+    globals: true,
+    environment: 'jsdom',
   }
 })

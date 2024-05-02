@@ -1,6 +1,6 @@
 <template>
   <div class="p-4">
-    <div v-if="beers?.length > 0" class="grid grid-cols-3 gap-6 p-4">
+    <div v-if="beers?.length > 0" class="grid sm:grid-cols-2 md:grid-cols-3 grid-cols-1 gap-6 p-4">
       <Beer v-for="beer in beers" :beer="beer"/>
     </div>
     <div v-else>

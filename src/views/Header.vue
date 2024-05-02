@@ -3,7 +3,7 @@
     <div class="flex items-center gap-2">
       <img :src="beer" alt="Beer Icon" height="32" class="h-8">
       <div>
-        Brewery browse
+        Breweries finder
       </div>
     </div>
   </div>

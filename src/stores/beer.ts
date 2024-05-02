@@ -44,6 +44,7 @@ export const useBeerStore = defineStore("beer", () => {
     await fetchBeers();
     isLoading.value = false;
   }
+  
 
   const setSortedBy = async (by: 'asc' | 'desc') => {
     query.sort = 'type,name:' + by;

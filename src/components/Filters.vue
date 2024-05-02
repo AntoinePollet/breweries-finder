@@ -1,5 +1,5 @@
 <template>
-    <div class="flex justify-center gap-3">
+    <div class="flex flex-wrap justify-center gap-3">
 
       <label class="input input-md ring-none input-bordered flex items-center gap-2 w-64">
         <input v-model="search" @input="searchBeer" type="text" class="grow" placeholder="Search beer by name..."/>
