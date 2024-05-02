@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Jersey15;
+  src: url('./assets/Jersey15-Regular.ttf');
+}
+
+body {
+  font-family: Jersey15, serif;
+  font-size: 18px;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
